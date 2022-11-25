@@ -1,0 +1,123 @@
+.bord {
+	background-color: #7697F0;
+	padding-top: 25px;
+	
+}
+nav {
+  display: table;
+  margin: 0 auto;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.topmenu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.topmenu > li {
+  
+  float: left;
+ 
+  position: relative;
+  font-family: Ubuntu, sans-serif;
+}
+.topmenu > li > a {
+   text-decoration: none;
+    font-family: Ubuntu;
+    color: #5757a0;
+    
+  padding: 15px 100px;
+  background-color: lavender; 
+  border-radius: 10px 10px 10px 10px;
+}
+.topmenu li a:hover { color: #D5B45B;
+}
+.submenu-link:after {
+  content: "\f107";
+  font-family: "Ubuntu";
+  color: inherit;
+}
+.submenu-link {
+	border-radius: 0px 10px 10px 0px;
+}
+.submenu {
+  background-color: lavender;
+  border-top: 1px solid #5757a0;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  width: auto;
+  opacity: 0;
+  transform: scaleY(0); /* разрешить всплытие */ 
+  transform-origin: 0 0; /*всплытие сверху*/
+  transition: .5s ease-in-out; /* постепенное появление*/
+  border-radius: 0px 0px 10px 10px;
+  margin-top: 5px;
+  
+}
+.submenu a {
+ color: #5757a0;
+  text-decoration: none;
+  text-align: left;
+  margin-left: 10px;
+  padding: 12px 15px;
+  font-size: 15px;
+  font-family: Ubuntu;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.submenu li {
+padding-top: 10px;
+}
+.submenu li:last-child a { border-bottom: none; }
+.topmenu > li:hover .submenu {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+ 
+ 
+ #preloader_malc {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0, 0, 0, .6);
+		z-index: 99
+	}
+
+	#preloader_malc div {
+		background: #fff;
+		width: 60px;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 8px;
+		font-family: arial;
+		font-size: 15px;
+		color: #111;
+		text-align: center;
+		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+		position: fixed;
+		z-index: 999;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto
+	}
+.as-header {
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+    width: 1800px;
+	background-color: #ffffff;
+	border-radius: 10px 10px 10px 10px;
+}
+.h2-as-page  {
+	background-color: lavender;
+	font-family: Ubuntu;
+	color: #5757a0;
+}
